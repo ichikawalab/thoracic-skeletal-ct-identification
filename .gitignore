@@ -1,0 +1,24 @@
+# Python and uv
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+
+# Local data are never committed (NLST images, clinical CSVs, derived tables)
+data/
+local_data/
+outputs/
+*.nii
+*.nii.gz
+*.dcm
+*.DCM
+nlst_780_*.csv
+*.meta.json
+*.log
+*.sqlite*
+verified_files.tsv
+
+# Manuscript drafts, third-party PDFs and working notes stay out of the public code repository
+Manuscript/
+prior_studies/
+notes/

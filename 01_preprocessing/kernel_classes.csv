@@ -1,0 +1,36 @@
+manufacturer,kernel,kernel_class,rationale
+GE,STANDARD,soft,GE standard body kernel; the soft-tissue reconstruction of the NLST protocol and paired with BONE or LUNG in the same examination
+GE,SOFT,soft,GE smooth body kernel
+GE,BONE,sharp,GE high-spatial-frequency kernel; paired with STANDARD in NLST
+GE,LUNG,sharp,GE high-spatial-frequency lung kernel; paired with STANDARD in NLST
+SIEMENS,B20f,soft,Siemens B-kernels numbered 40 and below are smooth/medium body kernels
+SIEMENS,B30f,soft,Siemens medium-smooth body kernel; the soft-tissue reconstruction of the NLST protocol and paired with B50f
+SIEMENS,B30s,soft,Sequential-mode variant of B30f
+SIEMENS,B31f,soft,Siemens medium-smooth body kernel
+SIEMENS,B31s,soft,Sequential-mode variant of B31f
+SIEMENS,B35f,soft,Siemens medium body kernel
+SIEMENS,B36f,soft,Siemens medium body kernel
+SIEMENS,B40f,soft,Siemens medium body kernel
+SIEMENS,B41s,soft,Sequential-mode variant of B41f (medium body kernel)
+SIEMENS,B45f,sharp,Siemens B-kernels numbered 45 and above are medium-sharp to very sharp (lung/bone)
+SIEMENS,B50f,sharp,Siemens medium-sharp kernel; the lung reconstruction of the NLST protocol and paired with B30f
+SIEMENS,B50s,sharp,Sequential-mode variant of B50f
+SIEMENS,B60f,sharp,Siemens sharp kernel
+SIEMENS,B60s,sharp,Sequential-mode variant of B60f
+SIEMENS,B70f,sharp,Siemens very sharp kernel
+SIEMENS,B80f,sharp,Siemens ultra-sharp kernel
+PHILIPS,A,soft,Philips smooth body kernel
+PHILIPS,B,soft,Philips standard body kernel; paired with D in NLST
+PHILIPS,C,soft,NLST soft kernel paired with D; Krishnan et al. 2024 doi:10.1002/mp.17028
+PHILIPS,D,sharp,Philips sharp kernel; the lung reconstruction partner of A/B/C in NLST
+PHILIPS,EC,sharp,Philips edge-enhancing kernel
+TOSHIBA,FC01,soft,Toshiba FC0x smooth body kernels
+TOSHIBA,FC02,soft,Toshiba FC0x smooth body kernels
+TOSHIBA,FC10,soft,Toshiba FC1x standard body kernels; paired with FC51 in NLST
+TOSHIBA,FC11,soft,Toshiba FC1x standard body kernels
+TOSHIBA,FC30,sharp,Toshiba high-resolution kernel; the sharp partner of FC01/FC02/FC10 in NLST
+TOSHIBA,FC50,sharp,Toshiba FC5x lung kernels
+TOSHIBA,FC51,sharp,Toshiba FC5x lung kernels; the lung reconstruction of the NLST protocol
+TOSHIBA,FC52,sharp,Toshiba FC5x lung kernels
+TOSHIBA,FC53,sharp,Toshiba FC5x lung kernels
+TOSHIBA,FC82,sharp,Toshiba FC8x bone kernels

@@ -1,0 +1,12 @@
+[project]
+name = "thoracic-env-radiomics"
+version = "0.1.0"
+description = "PyRadiomics environment for 3D shape-feature extraction from segmentation masks."
+requires-python = ">=3.9,<3.10"
+dependencies = [
+    "pyradiomics==3.1.0",
+    "SimpleITK>=2.3,<3",
+    "numpy<2",
+    "pandas>=2.0,<3",
+    "pyyaml>=6",
+]

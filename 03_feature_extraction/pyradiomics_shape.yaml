@@ -1,0 +1,14 @@
+# Shape-only features of the mask, resampled to 1 mm isotropic voxels (nearest neighbour), no mask correction.
+setting:
+  resampledPixelSpacing: [1.0, 1.0, 1.0]
+  interpolator: sitkNearestNeighbor
+  padDistance: 5
+  force2D: false
+  correctMask: false
+  minimumROIDimensions: 1
+
+imageType:
+  Original: {}
+
+featureClass:
+  shape: []

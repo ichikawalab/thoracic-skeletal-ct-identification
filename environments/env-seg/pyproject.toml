@@ -1,0 +1,28 @@
+[project]
+name = "thoracic-env-seg"
+version = "0.1.0"
+description = "TotalSegmentator environment for sternum and vertebral body segmentation (GPU)."
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "totalsegmentator==2.18.0",
+    "torch==2.6.0+cu124",
+    "torchvision==0.21.0+cu124",
+    "thoracic-skeletal-ct-identification",
+]
+
+# TotalSegmentator 2.18.0 needs pydicom 3 while the root package pins pydicom 2 for
+# inventory and conversion. Segmentation imports only common.provenance and the
+# TotalSegmentator patch, neither of which reads DICOM, so the override is safe here.
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }
+torchvision = { index = "pytorch-cu124" }
+thoracic-skeletal-ct-identification = { path = "../..", editable = true }
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv]
+override-dependencies = ["pydicom>=3.0"]
